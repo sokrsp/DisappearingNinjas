@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja</title>
+	<style type="text/css">
+		#container{
+			min-width: 900px;
+			min-height: 300px;
+			background-color: white;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body>
+{% load staticfiles %}
+	{% if image %}
+	<img src="{% static image %}" alt="" />
+	{% else %}
+	
+	<img src="{% static 'DN/images/donatello.jpg' %}" alt="" />
+    <img src="{% static 'DN/images/leonardo.jpg' %}" alt="" />
+    <img src="{% static 'DN/images/michelangelo.jpg' %}" alt="" />
+    <img src="{% static 'DN/images/raphael.jpg' %}" alt="" />
+    {% endif %}
+    {# <img src="{% static 'DN/images/meganfox.jpg' %}" alt="" />#}
+
+</body>
+</html>

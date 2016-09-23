@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninjas</title>
+	<style type="text/css">
+		#container{
+			min-width: 900px;
+			min-height: 300px;
+			background-color: white;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="container">
+		{% load staticfiles %}
+		<img src="{% static "DN/images/michelangelo.jpg" %}"/>
+		<img src="{% static "DN/images/donatello.jpg" %}"/>
+		<img src="{% static "DN/images/raphael.jpg" %}"/>
+		<img src="{% static "DN/images/leonardo.jpg" %}"/>
+	</div>
+</body>
+</html>
